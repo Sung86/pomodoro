@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="../assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="stylesheet" href="../assets/styles/main.css">
+  <title>Pomodoro</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="flex-container">
+      <!-- Title -->
+      <div class="main-title"><h3>pomodoro</h3></div>
+      <!-- Tab Bar -->
+      <div class="tab-bar">
+        <div data-id="tab1" class="tab tab-selected red-1">pomodoro</div>
+        <div data-id="tab2" class="tab">short break</div>
+        <div data-id="tab3" class="tab">long break</div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <center>
+    <!-- Tab Bar Contents -->
+      <div class="tab-content-container">
+        <div id="tab1" class="tab-content border-colour-red1">
+          <!-- Content 1 -->
+            <div>
+              <h1 id="tab1-timer-time">01:00</h1>
+              <span id="tab1-timer-status">start</span>
+            </div>
+        </div>
+        <div id="tab2" class="tab-content hidden border-colour-red1">  
+          <!-- Content 2 --> 
+          <div>
+            <h1 id="tab2-timer-time">02:00</h1>
+            <span id="tab2-timer-status">start</span>
+          </div>
+        </div>
+        <div id="tab3" class="tab-content hidden border-colour-red1">   
+          <!-- Content 3 -->
+          <div>
+            <h1 id="tab3-timer-time">03:00</h1>
+            <span id="tab3-timer-status">start</span>
+          </div>
+        </div>
+      </div>
+      <!-- Setting Board -->
+      <div class="setting-board hidden">
+        <div class="setting-board-header">
+          <h2 class="setting-board-title">Settings</h2>
+          <img class="setting-board-close-btn" width="30px" height="30px" 
+              src="../assets/images/cross.svg" alt="close-button"/>
+        </div>
+        <hr>
+        <div class="setting-board-content">
+          <!-- Time Setting  -->
+          <h3 class="setting-board-subtitle">TIME (MINUTES)</h3>
+          <div class="setting-timer">
+            <div class="setting-timer-grid">
+              <label>pomodoro</label>
+              <label>short break</label>
+              <label>long break</label>
+              <input id="setting-timer-input1" min="0" onkeyup="if(parseInt(this.value)<0){ this.value =0; 
+                    return false; }" type="number"/>
+              <input id="setting-timer-input2" min="0"onkeyup="if(parseInt(this.value)<0){ this.value =0; 
+                    return false; }" type="number"/>
+              <input id="setting-timer-input3" min="0" onkeyup="if(parseInt(this.value)<0){ this.value =0; 
+                    return false; }" type="number"/>
+            </div>
+          </div>
+          <hr>
+          <!-- Colour Setting -->
+          <div class="setting-colour">
+            <h3 class="setting-board-subtitle">COLOUR</h3>
+            <div id="setting-colour-tick-frame1" class="setting-colour1 red-1">
+              <img id="setting-colour-tick1" class="setting-colour-tick" width="30px" src="../assets/images/tick.svg">
+            </div>
+            <div id="setting-colour-tick-frame2" class="setting-colour2 green-1">
+              <img id="setting-colour-tick2" class="setting-colour-tick hidden" width="30px" src="../assets/images/tick.svg">
+            </div>
+            <div id="setting-colour-tick-frame3" class="setting-colour3 pink-1">
+              <img id="setting-colour-tick3" class="setting-colour-tick hidden" width="30px" src="../assets/images/tick.svg">
+            </div>
+          </div>
+          <!-- Setting Apply Button -->
+          <div class="setting-board-apply-btn">
+            <h3>Apply</h3>
+          </div>
+        </div>
+      </div>
+
+    </center>
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <center>
+      <img class="setting-btn" width="50px" height="50px" src="../assets/images/gear.svg" alt="setting-button"/>
+    </center>
+  </footer>
+  <script src="../assets/scripts/main.js"></script>
+</body>
+</html>
