@@ -1,0 +1,38 @@
+@media screen and (max-width: 520px) {
+  /* tab */
+  .tab {
+    font-size: 9pt;
+  }
+  /* Setting Board */
+  .setting-board {
+    width: 300px;
+    overflow-y: scroll;
+  }
+  .setting-timer-grid {
+    padding: 0 30px 20px 20px;
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+  }
+  .setting-timer-grid input {
+    margin-bottom: 10px;
+    width: 150px;
+  }
+  .setting-board-content hr {
+    width: 250px;
+  }
+  .setting-board-subtitle {
+    text-align: center;
+    margin-right: 10px;
+  }
+  .setting-colour div {
+    margin-top: 5px;
+    width: 40px;
+    height: 45px;
+  }
+  .setting-colour-tick {
+    margin-top: 8px;
+  }
+  .setting-board-apply-btn {
+    margin-bottom: 20px;
+  }
+}

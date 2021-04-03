@@ -12,6 +12,7 @@
   <link rel="manifest" href="../assets/images/favicon/site.webmanifest">
   <link rel="mask-icon" href="../assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="stylesheet" href="../assets/styles/main.css">
+  <link rel="stylesheet" href="../assets/styles/mediaQueries.css">
   <title>Pomodoro</title>
 </head>
 <body>
@@ -67,15 +68,21 @@
           <h3 class="setting-board-subtitle">TIME (MINUTES)</h3>
           <div class="setting-timer">
             <div class="setting-timer-grid">
-              <label>pomodoro</label>
-              <label>short break</label>
-              <label>long break</label>
-              <input id="setting-timer-input1" min="0" onkeyup="if(parseInt(this.value)<0){ this.value =0; 
-                    return false; }" type="number"/>
-              <input id="setting-timer-input2" min="0"onkeyup="if(parseInt(this.value)<0){ this.value =0; 
-                    return false; }" type="number"/>
-              <input id="setting-timer-input3" min="0" onkeyup="if(parseInt(this.value)<0){ this.value =0; 
-                    return false; }" type="number"/>
+              <div>
+                <label>pomodoro</label>
+                <input id="setting-timer-input1" min="0" onkeyup="if(parseInt(this.value)<0){ this.value =0; 
+                  return false; }" type="number"/>
+              </div>
+              <div>
+                <label>short break</label>
+                <input id="setting-timer-input2" min="0"onkeyup="if(parseInt(this.value)<0){ this.value =0; 
+                  return false; }" type="number"/>
+              </div>
+              <div> 
+                <label>long break</label>
+                <input id="setting-timer-input3" min="0" onkeyup="if(parseInt(this.value)<0){ this.value =0; 
+                  return false; }" type="number"/>
+              </div>
             </div>
           </div>
           <hr>
