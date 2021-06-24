@@ -39,6 +39,7 @@ const runTimer = (duration, timeElement)=>{
 }
 const executeTime = (duration, timeElement, runTimeId)=>{
   let countdown = duration, minutes, seconds;
+
   window[`runTime${runTimeId}`] = setInterval(()=> {
     minutes = parseInt(countdown / 60, 10);
     seconds = parseInt(countdown % 60, 10);
@@ -54,6 +55,10 @@ const executeTime = (duration, timeElement, runTimeId)=>{
       clearInterval(window[`runTime${runTimeId}`]);
     }
   }, 1000);
+
+}
+const a = (countdown, duration, miuntes, seconds)=>{
+
 }
 const restartTimer = (duration,timeElement)=>{
   startTimer(duration,timeElement)

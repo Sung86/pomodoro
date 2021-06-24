@@ -5,13 +5,33 @@
   }
   /* Setting Board */
   .setting-board {
-    width: 300px;
-    overflow-y: scroll;
+    width: 330px;
+    height: 37em;
+    /* overflow-y: auto;
+    scrollbar-color:  #cececebb #fff;
+    scrollbar-width: thin;
+    scroll-margin: 40px 0;
+    scroll-behavior: smooth !important; */
   }
+  
+  /* .setting-board::-webkit-scrollbar{
+    width: 3px !important;
+    scroll-behavior: smooth !important;
+  }
+  .setting-board::-webkit-scrollbar-thumb{
+    background-color: #cececebb !important;
+    border-radius: 10px !important;
+  } */
   .setting-timer-grid {
     padding: 0 30px 20px 20px;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     display: grid;
+  }
+  .setting-timer-grid div{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
   }
   .setting-timer-grid input {
     margin-bottom: 10px;
